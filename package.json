@@ -1,0 +1,19 @@
+{
+  "name": "node-mitm-proxy-chain",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node -r dotenv/config ./src/forward/app.js",
+    "mon": "nodemon -r dotenv/config ./src/forward/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^15.0.0",
+    "http-proxy": "^1.18.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
